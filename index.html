@@ -1,104 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar">
 
 <head>
-  <title>Age Timer</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <style>
-    body {
-      background-color: #f8f9fa;
-    }
-
-    .container {
-      max-width: 400px;
-      margin-top: 50px;
-    }
-
-    .card {
-      border: none;
-      border-radius: 10px;
-      background-color: #ffffff;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .card-header {
-      background-color: #f8f9fa;
-      border-bottom: none;
-    }
-
-    .card-title {
-      font-size: 24px;
-      font-weight: bold;
-      text-align: center;
-      color: #333333;
-    }
-
-    .card-body {
-      padding: 20px;
-    }
-
-    .timer-value {
-      font-size: 48px;
-      font-weight: bold;
-      text-align: center;
-      color: #333333;
-      margin: 0;
-    }
-
-    .timer-label {
-      font-size: 18px;
-      text-align: center;
-      color: #666666;
-      margin-top: 5px;
-    }
-
-    .name-card {
-      margin-top: 20px;
-      padding: 20px;
-      text-align: center;
-      background-color: #ffffff;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .name-title {
-      font-size: 24px;
-      font-weight: bold;
-      color: #333333;
-      margin: 0;
-    }
-
-    .name-value {
-      font-size: 18px;
-      color: #666666;
-      margin-top: 5px;
-    }
-  </style>
+  <title>Arkan Bin Mohammed</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--===============================================================================================-->
+  <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="css/util.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <!--===============================================================================================-->
 </head>
 
 <body>
-  <div class="container">
-    <div class="card">
-      <div class="card-header">
-        <h2 class="card-title">Arkan bin Mohammed bin Rabiea bin Salman Ba-Saleh Al Kinde</h2>
+
+
+  <div class="bg-img1 size1 flex-w flex-c-m p-t-55 p-b-55 p-l-15 p-r-15"
+    style="background-image: url('images/bg01.jpg');">
+    <div class="wsize1 bor1 bg1 p-t-175 p-b-45 p-l-15 p-r-15 respon1">
+      <div class="wrappic1">
+        <!--<img src="images/icons/logo.png" alt="LOGO"> -->
       </div>
-      <div class="card-body">
-        <h3 class="timer-value" id="years">0</h3>
-        <p class="timer-label">Years</p>
-        <h3 class="timer-value" id="months">0</h3>
-        <p class="timer-label">Months</p>
-        <h3 class="timer-value" id="days">0</h3>
-        <p class="timer-label">Days</p>
-        <h3 class="timer-value" id="hours">0</h3>
-        <p class="timer-label">Hours</p>
-        <h3 class="timer-value" id="minutes">0</h3>
-        <p class="timer-label">Minutes</p>
-        <h3 class="timer-value" id="seconds">0</h3>
-        <p class="timer-label">Seconds</p>
+
+      <p class="txt-center m1-txt1 p-t-33 p-b-68">
+        أركان بن محمد بن ربيع بن سلمان باصالح الكندي
+      </p>
+
+      <div class="wsize2 flex-w flex-c hsize1">
+        <div class="flex-col-c-m size2 how-countdown">
+          <span class="l1-txt1 p-b-9 years"></span>
+          <span class="s1-txt1">سنة</span>
+        </div>
+
+        <div class="flex-col-c-m size2 how-countdown">
+          <span class="l1-txt1 p-b-9 months"></span>
+          <span class="s1-txt1">شهر</span>
+        </div>
+
+        <div class="flex-col-c-m size2 how-countdown">
+          <span class="l1-txt1 p-b-9 days"></span>
+          <span class="s1-txt1">يوماً</span>
+        </div>
+
+        <div class="flex-col-c-m size2 how-countdown">
+          <span class="l1-txt1 p-b-9 hours" id="hours"></span>
+          <span class="s1-txt1">ساعة</span>
+        </div>
+
+        <div class="flex-col-c-m size2 how-countdown">
+          <span class="l1-txt1 p-b-9 minutes"></span>
+          <span class="s1-txt1">دقيقة</span>
+        </div>
+
+        <div class="flex-col-c-m size2 how-countdown">
+          <span class="l1-txt1 p-b-9 seconds"></span>
+          <span class="s1-txt1">ثانية</span>
+        </div>
       </div>
     </div>
   </div>
-
-
+  <!--===============================================================================================-->
+  <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+  <!--===============================================================================================-->
+  <script src="vendor/bootstrap/js/popper.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!--===============================================================================================-->
+  <script src="vendor/select2/select2.min.js"></script>
+  <!--===============================================================================================-->
+  <script src="vendor/countdowntime/moment.min.js"></script>
+  <script src="vendor/countdowntime/moment-timezone.min.js"></script>
+  <script src="vendor/countdowntime/moment-timezone-with-data.min.js"></script>
+  <script src="vendor/countdowntime/countdowntime.js"></script>
   <script>
     function calculateAge(birthdate) {
       var today = new Date();
@@ -110,7 +91,7 @@
     }
 
     function updateTimer() {
-      var birthdate = "2023-09-25:20:00"; // Enter your son's birthdate here
+      var birthdate = "2023-09-25:20:00"; // Enter the birthdate here
       var ageDate = calculateAge(birthdate);
 
       var years = ageDate.getUTCFullYear() - 1970;
@@ -120,23 +101,35 @@
       var minutes = ageDate.getUTCMinutes();
       var seconds = ageDate.getUTCSeconds();
 
-      var yearsElement = document.getElementById('years');
-      yearsElement.innerHTML = "Year " + years;
+      var yearsElements = document.getElementsByClassName('years');
+      for (var i = 0; i < yearsElements.length; i++) {
+        yearsElements[i].innerHTML = years;
+      }
 
-      var monthsElement = document.getElementById('months');
-      monthsElement.innerHTML = "Month " + months;
+      var monthsElements = document.getElementsByClassName('months');
+      for (var i = 0; i < monthsElements.length; i++) {
+        monthsElements[i].innerHTML = months;
+      }
 
-      var daysElement = document.getElementById('days');
-      daysElement.innerHTML = "Day " + days;
+      var daysElements = document.getElementsByClassName('days');
+      for (var i = 0; i < daysElements.length; i++) {
+        daysElements[i].innerHTML = days;
+      }
 
-      var hoursElement = document.getElementById('hours');
-      hoursElement.innerHTML = "Hour " + hours;
+      var hoursElements = document.getElementsByClassName('hours');
+      for (var i = 0; i < hoursElements.length; i++) {
+        hoursElements[i].innerHTML = hours;
+      }
 
-      var minutesElement = document.getElementById('minutes');
-      minutesElement.innerHTML = "Minute " + minutes;
+      var minutesElements = document.getElementsByClassName('minutes');
+      for (var i = 0; i < minutesElements.length; i++) {
+        minutesElements[i].innerHTML = minutes;
+      }
 
-      var secondsElement = document.getElementById('seconds');
-      secondsElement.innerHTML = "Second " + seconds;
+      var secondsElements = document.getElementsByClassName('seconds');
+      for (var i = 0; i < secondsElements.length; i++) {
+        secondsElements[i].innerHTML = seconds;
+      }
 
       // Increment the timer every second
       ageDate.setSeconds(ageDate.getSeconds() + 1);
@@ -146,6 +139,10 @@
     // Start the timer
     updateTimer();
   </script>
+  <!--===============================================================================================-->
+
+  <!--===============================================================================================-->
+
 </body>
 
 </html>
